@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> Projects - Entombed</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section class="entombed-header">
+
+        <div class="entombed-navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="MelloEngine.html"><font color="white">Mello Engine</font></a>
+                  <a href="Entombed.html"><font color="white">Entombed</font></a>
+                  <a href="CCBB.html"><font color="white">Conveyer Craze: Burger Builder</font></a>
+                </div>
+              </div>
+          </div>
+
+
+        <div class="entombed-text-box">
+            <!-- Main title and basic description of the website -->
+            <h1>Entombed</h1>
+            <p>Won 2nd place Game Level Design and 3rd place Game Tech at the 2024 Games Republic Student Showcase. <br><br>
+                <br>
+              Entombed was created in my third year of University for my Advanced Console Games Projects Module, it was created on Playstation 5 Developer kits from scratch using some of Sony's libraries and pure C++ over 6 months.
+              Based on a brief of Folklore Entobmed puts you in the shoes of a skeptic treasure hunter who thinks they know better than the superstitious types who dare not venture into the Draugr's tomb. Although as you venture further into the structure not all things are as clear cut as they may have seemed</p>          
+        </div>  
+    </section>
+    <!-- New section of the website. -->
+    <section class="showcase">
+        <!-- Title and description of this section -->
+        
+        <h2>Screenshots</h2>
+        <p>Use the scrollbar to view more images.</p>
+        <div class="scroll-container">
+          <img src="images/e1.jpg" width="600" height="400">
+          <img src="images/e2.jpg" width="600" height="400">
+          <img src="images/e3.jpg" width="600" height="400">
+          <img src="images/e4.jpg" width="600" height="400">
+          <img src="images/e5.jpg" width="600" height="400">
+          <img src="images/e6.jpg" width="600" height="400">
+          <img src="images/e7.jpg" width="600" height="400">
+          <img src="images/e8.jpg" width="600" height="400">
+          <img src="images/e9.jpg" width="600" height="400">
+          <img src="images/e10.jpg" width="600" height="400">
+          <img src="images/e11.jpg" width="600" height="400">
+          <img src="images/e12.jpg" width="600" height="400">
+
+        </div>
+        <h2>My role</h2>
+        <p>
+            Created by a small team of 5 Uni students (3 programmers, 1 designer & 1 artist), Enbtombed is a game based around the viking mythos of the Draugr.<br>
+            I was responsible for many of the gameplay, engine and graphical implementations for this project including:
+        </p>
+
+
+        <h3>Custom Collision Detection & Response System</h3>
+        <p>
+            To keep the player within bounds of the level, a collision resolver was needed to detect and react to player movement in relation to objects in the gameworld.<br>
+            My implementation made use of custom bounding volumes ( In this case OBBs & AABBs), GJK distance detection & Expanding Polytope Algorithms for detecting & resolving collisions respectively.
+
+        
+        </p>
+        <h3>Imgui Debug Scene Inspector & Editor</h3>
+        <p>
+            For rudimentary level editing and debugging the dear ImGui library was used to implement an easy to use debug menu that allowed for lots under the hood editing of different gameplay variables.<br>
+            As well as providing lots of visual information useful for debugging, it also allowed for <br>
+            Objects to be spawned, manipulated, deleted, have component's like the hitbox edited and more. Sound effects & In-Game Events could be called on demand & Realtime editing of shader variables was accessible to adjust the look of the game on the fly.
+        </p>
+        <h3>JSON Serializer & Parser</h3>
+        <p>
+           Enbtombed was developed with a Data-Driven philosophy and due to the large quantity of assets used in the game, a suitable way to manage scenes, asset paths and many other data variables in the game was neccessary<br>
+           Making use of the rapidJson library to serialize data and read from json files for large sets of data. This was used for many things from scene loading, hitbox bounds, Model, Texture & Sound filepaths and info.
+        </p>
+        <h3>PSX/PS1 Shader Effects</h3>
+        <p>
+            Fitting in with Entombed's unique aesthetic, we really wanted to bring out that retro horror feel with extra character, We achieved this by using low-poly and simplistic assets focusing heavily on post-processing and shader effects to create the visual style<br>
+            A large player in the visuals of Entombed is the Vertex warping & Affine texture mapping akin to the PlayStation 1's similar visual artefacts found in many titles. which are emulated in the forward render pass to achieve that Silent-Hill Vibe.
+        </p>
+    </section>
+    
+    
+    
+    </body>

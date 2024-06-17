@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Liam Hamit - Software & Game Developer</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section class="header">
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="MelloEngine.html"><font color="white">Mello Engine</font></a>
+                  <a href="Entombed.html"><font color="white">Entombed</font></a>
+                  <a href="CCBB.html"><font color="white">Conveyer Craze: Burger Builder</font></a>
+                </div>
+              </div>
+          </div>
+        <div class="text-box">
+            <!-- Main title and basic description of the website -->
+            <h1>Get in touch</h1>
+            <p>
+                You can get in touch with me directly at <a href="#">Liam_Hamit@Hotmail.com</a>, or alternatively you can fill out the form below.
+            </p>
+            
+            <section class="popup-form-container">
+                <form id="contact-form" action="https://formsubmit.co/liam_hamit@hotmail.com" method="POST">
+                    <div class="form-row form-error" style="display:none;"></div>
+                    <div class="form-row">
+                      <label for="contact-form-name">Name:</label>
+                      <input id="contact-form-name" class="form-input"placeholder="Enter your name here (Required)" type="text" name="name" required>
+                    </div>
+                    <div class="form-row">
+                      <label for="contact-form-email">Email:</label>
+                      <input id="contact-form-email" class="form-input" placeholder="Enter your Email here (Required)" type="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                      <label for="contact-form-phone">Phone:</label>
+                      <input id="contact-form-phone" placeholder="Phone Number (Optional)" class="form-input" type="tel" name="phone">
+                    </div>
+                    <div class="form-row">
+                      <label for="contact-form-message">Message:</label>
+                      <textarea id="contact-form-message" class="form-input-message" placeholder="Enter your Message here (Required)" name=message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <input type="hidden", name="_next" value="thankyou.html">
+                  </form>
+        
+        
+           </section>
+        </div>  
+    
+    
+    
+    
+    </body>
