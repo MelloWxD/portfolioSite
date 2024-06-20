@@ -11,7 +11,7 @@
     <body>
     <section class="entombed-header">
 
-        <div class="entombed-navbar">
+        <div class="navbar">
             <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
             <div class="dropdown">
@@ -19,11 +19,15 @@
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="MelloEngine.html"><font color="white">Mello Engine</font></a>
+                  <a href="working-on-it.html"><font color="white">Mello Engine</font></a>
                   <a href="Entombed.html"><font color="white">Entombed</font></a>
                   <a href="CCBB.html"><font color="white">Conveyer Craze: Burger Builder</font></a>
                 </div>
               </div>
+              <div class="navbar-images">
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.png"> </a>
+                <a href="https://github.com/MelloWxD"><img src="images/git.png"> </a>
+          </div>
           </div>
 
 
@@ -57,18 +61,36 @@
           <img src="images/e12.jpg" width="600" height="400">
 
         </div>
+        <h3>Tools - C++, PS5 Devkits, JSON</h3>
+        <h2>About</h2>
+        <p>Entombed is an FPS horror game set in the depths of an ancient Draugr's tomb. The player takes the shoes of a skeptic treasure hunter, who isn't afraid of the 'ghost-stories' goes in search of valuable goods in old historical sites, however as the game progresses you soon realize, maybe those stories had more truth to them than expected.
+        <br>
+            The game thrives on player intraction as each one made with the world (whether opening a door or picking up items) increaeses the likelyhood of sanity events to play. Sanity events are a series of events that occur randomly throughout the playthrough ranging from over 10 visual effects that emulate a dwindiling sense of sanity and also gameplay events such as door slamming or spawning the draugr nearby.
+            <br>
+            <B>Solve puzzles and maintain your flashlight battery while you trek through the dark depths of the Draugr's Tomb. and make sure to grab anything shiny!</B>
+        </p>
         <h2>My role</h2>
         <p>
+            Entombed was created in the span of 6 months from scratch on the PS5DK,
+            Creating a custom engine suited for our needs we designed and implemented features/tools that were invaluable to the projects development such as
+            Serializable saving and loading of game and scene data as well as a Unity scene exporter for seamless level design creation/export to serialized format used by our engine.
             Created by a small team of 5 Uni students (3 programmers, 1 designer & 1 artist), Enbtombed is a game based around the viking mythos of the Draugr.<br>
+            Due to the size of the programming team being small, we each had fairly large implementations we were assigned, as the engine/design doc grew with requirements.
             I was responsible for many of the gameplay, engine and graphical implementations for this project including:
         </p>
-
-
         <h3>Custom Collision Detection & Response System</h3>
         <p>
             To keep the player within bounds of the level, a collision resolver was needed to detect and react to player movement in relation to objects in the gameworld.<br>
             My implementation made use of custom bounding volumes ( In this case OBBs & AABBs), GJK distance detection & Expanding Polytope Algorithms for detecting & resolving collisions respectively.
-
+            
+        
+        </p>
+        <h3>Sound Engine</h3>
+        <p>
+           Due to using Sony's libraries for our engine, much of the functionality implemented had to be using their systems which required lots of technical understanding and plenty of research & testing on the limited documentation available.<br>
+           Because of this a robust system was needed to suit our game as many of the horror aspects rely heavily on visual/audio queues.<br>
+           The Audio Manager system implemented is a Singleton class that mananges a pool structure of audio sources allowing for dynamic allocation of voices and rendering/parsing of sound files from anywhere in code it was needed.
+            It takes into account the sound and player position to emulate 3D Audio further increaing immersion as well as supporting up to 64 simultaneous voice playbacks at any one time. 
         
         </p>
         <h3>Imgui Debug Scene Inspector & Editor</h3>

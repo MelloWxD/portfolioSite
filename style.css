@@ -33,13 +33,14 @@ div.scroll-container img {
 .navbar-images
  {
   float: right;
-  text-align: center;
   overflow: hidden;
+  position: relative;
 
 }
 .navbar-images a {
   float: right ;
   color: white;
+
 }
 .entombed-navbar {
   text-align: center;
@@ -59,12 +60,19 @@ div.scroll-container img {
 .entombed-header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(#200524b3, #000000b3),url(images/header.jpg);
+  background-image: linear-gradient(#200524b3, #000000b3),url(images/e7.jpg);
   background-position: center;
   background-size: cover;
   position: relative; 
 }
-
+.CCBB-header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#200524b3, #000000b3),url(images/CCBB1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
 .entombed-navbar a:hover, .dropdown:hover  {
   background-color: #3e8ab6;
 }
@@ -173,7 +181,7 @@ div.scroll-container img {
   padding: 12px 34px;
   font-size: 13px;
   background: transparent;
-  position: relative;
+  position: center;
   cursor: pointer;
 }
 .hero-btn:hover{
@@ -376,7 +384,10 @@ h3{
   color: red;
 }
 
+.body{
+  background: rgba(34,34,34,0.9);
 
+}
 /*---- showcase ----*/
 
 .video-body{
